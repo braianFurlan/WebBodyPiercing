@@ -11,7 +11,16 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PiercingDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PiercingDbContext")));
 
+
+
 var app = builder.Build();
+
+// invocar la ejecucion del seeder con un scope para resolver el dbcontext  
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<PiercingDbContext>();
+    DbSeeder.Seed(dbContext);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

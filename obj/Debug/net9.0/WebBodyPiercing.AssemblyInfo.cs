@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebBodyPiercing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f1e2ff87b1899628f1133f076857b07f296ad1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebBodyPiercing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebBodyPiercing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

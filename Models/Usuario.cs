@@ -14,6 +14,7 @@ namespace WebBodyPiercing.Models
         [DataType(DataType.Date)]
         public DateTime FechaNacimiento { get; set; }
 
+
         public string UrlImagenPerfil { get; set; }
         public List<Review>? Reviews { get; set; } = new List<Review>();
             public List<Favorito>? Favoritos { get; set; } = new List<Favorito>();
